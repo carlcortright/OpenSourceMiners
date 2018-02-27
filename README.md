@@ -3,7 +3,7 @@
 ## An analysis on open source projects
 
 
-## Team Members: 
+## Team Members
 ### Carl Cortright
 ### Drew Casner
 ### Shubha Swamy
