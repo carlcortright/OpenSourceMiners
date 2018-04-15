@@ -2,16 +2,12 @@
 
 ### An analysis on open source projects
 
-
-#### Team Members:
-##### Carl Cortright
-##### Drew Casner
-##### Shubha Swamy
-##### Oliver Collins 
-
-
 ## Project title
 ## Team members
+#### Carl Cortright
+#### Drew Casner
+#### Shubha Swamy
+#### Oliver Collins 
 ## Description of the project
 ## Summary of the question(s) sought and the answers
 ## Application of this knowledge
