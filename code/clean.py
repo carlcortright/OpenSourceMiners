@@ -23,3 +23,7 @@ fig.savefig("missing_projects_data.png")
 plt = msno.heatmap(f)
 fig = plt.get_figure()
 fig.savefig("project_collissions.png")
+
+msno.bar(f.sample(1000))
+fig = plt.get_figure()
+fig.savefig("null_bar_chart.png")
