@@ -10,6 +10,9 @@ def miniturize(fpath):
         exit(1)
 
 # Get all of the paths to the data
-paths = [f for f in os.listdir("./data/") if re.match("*+.csv", f)]
+paths = [f for f in os.listdir("./data/") if re.match(r".*\.csv", f)]
 
-print(paths)
+root_path = "data/"
+for path in paths:
+    print("Miniturizing %s" % path)
+    miniturize(root_path + path)
