@@ -4,3 +4,4 @@ scipy
 seaborn
 numpy
 missingno
+scikit-learn
