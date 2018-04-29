@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 html {
   box-sizing: border-box;
+}
+.welcome {
+  font-family: 'Slabo 27px', serif;
+  font-size: 30px;
 }
 
 *, *:before, *:after {
@@ -13,7 +19,7 @@ html {
 
 .column {
   float: left;
-  width: 33.3%;
+  width: 25%;
   margin-bottom: 16px;
   padding: 0 8px;
 }
@@ -55,54 +61,82 @@ html {
   width: 100%;
 }
 
+.button a {
+  color: #ffffff;
+  text-decoration: white;
+}
+
 .button:hover {
   background-color: #555;
+}
+
+.btns {
+  height: 50vh;
+  width: 75vw;
 }
 </style>
 </head>
 <body>
 
+<div class="welcome">
 <h2><center>Meet The Team</center></h2>
 <br>
+</div>
 
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="../images/monkey1.jpg" alt="Jane" style="width:100%">
+      <img src="../images/monkey5.jpg" alt="Drew" style="width:100%">
       <div class="container">
         <h2>Drew Casner</h2>
-        <p class="title">CEO & Founder</p>
+        <p class="title">Software Developer</p>
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
+        <a class="fab fa-github" href="https://github.com/Andrew-Casner"></a>
+        <a class="fab fa-linkedin" href="https://www.linkedin.com/in/drew-casner/"></a>
+        <p><button class="button"><a href="mailto:drew@giveandgofilm.com">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="../images/monkey4.jpg" alt="Oliver" style="width:100%">
+      <div class="container">
+        <h2>Oliver Collins</h2>
+        <p class="title">Software Developer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <a class="fab fa-linkedin" href="https://www.linkedin.com/in/collinsoliver/"></a>
+        <a class="fab fa-github" href="https://github.com/OliverCollins"></a>
+        <p><button class="button"><a href="mailto:oliver.collins@colorado.edu">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="../images/monkey3.jpg" alt="Carl" style="width:100%">
+      <div class="container">
+        <h2>Carl Cortright</h2>
+        <p class="title">Software Developer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <a class="fab fa-linkedin" href="https://www.linkedin.com/in/carlcortright/"></a>
+        <a class="fab fa-github" href="https://github.com/carlcortright"></a>
+        <p><button class="button"><a href="mailto:carl@carlcortright.com">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="../images/monkey2.jpg" alt="Shubha" style="width:100%">
+      <div class="container">
+        <h2>Shubha Swamy</h2>
+        <p class="title">Software Developer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <a class="fab fa-linkedin" href="https://www.linkedin.com/in/shubhaswamy/"></a>
+        <a class="fab fa-github" href="https://github.com/shubhaswamy"></a>
+        <p><button class="button"><a href="mailto:shubha.swamy@colorado.edu">Contact</a></button></p>
       </div>
     </div>
   </div>
 
-  <div class="column">
-    <div class="card">
-      <img src="../images/monkey2.jpg" alt="Mike" style="width:100%">
-      <div class="container">
-        <h2>Carl Cortright</h2>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-  <div class="column">
-    <div class="card">
-      <img src="../images/monkey3.jpg" alt="John" style="width:100%">
-      <div class="container">
-        <h2>Shubha Swamy</h2>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
 </div>
 
 </body>
