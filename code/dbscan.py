@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 # Prepare Data
 #============================
 
-#projectsData = pd.read_csv("./small_data/projects-1.2.0-2018-03-12.csv", usecols=['Name', 'SourceRank', 'Dependent Repositories Count'], low_memory=False)
-projectsData = pd.read_csv("./small_data/repositories-1.2.0-2018-03-12.csv", usecols=['Name with Owner', 'Mirror URL', 'Pages enabled'], low_memory=False)
+projectsData = pd.read_csv("./small_data/projects-1.2.0-2018-03-12.csv", usecols=['Name', 'SourceRank', 'Dependent Repositories Count'], low_memory=False)
+#projectsData = pd.read_csv("./small_data/repositories-1.2.0-2018-03-12.csv", usecols=['Name with Owner', 'Mirror URL', 'Pages enabled'], low_memory=False)
 #print(projectsData['Size'])
 #print(projectsData['Pages enabled'])
 data = []
@@ -37,7 +37,9 @@ for x in data:
 db = DBSCAN(min_samples=10, n_jobs=-1).fit(kData)
 labels = db.labels_
 clusters = len(set(labels)) - (1 if -1 in labels else 0)
-print(labels)
+for i in labels:
+    print(i)
+#print(labels)
 print(clusters)
 #plt.scatter(kDataX, kDataY)
 #plt.show()
