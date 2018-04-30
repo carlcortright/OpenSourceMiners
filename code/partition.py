@@ -5,7 +5,7 @@ def miniturize(fname):
     fpath = "data/" + fname
     # Open the file to be cleaned
     if(os.path.isfile(fpath)):
-        f = pd.read_csv(fpath, low_memory=False, nrows=10000)
+        f = pd.read_csv(fpath, low_memory=False, nrows=500000)
     else:
         print("ERROR: %s is an invalid file path" % fpath)
         exit(1)
