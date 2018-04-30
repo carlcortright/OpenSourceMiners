@@ -11,7 +11,7 @@ def kmeans(dataSet, name, col1, col2, saveName):
     # Prepare Data
     #============================
 
-    projectsData = pd.read_csv(dataSet, usecols=[name, col1, col2], low_memory=False)
+    projectsData = pd.read_csv(dataSet, usecols=[name, col1, col2], low_memory=False, nrows=500)
     #projectsData = pd.read_csv(dataSet, low_memory=False)
     #print(projectsData.head())
     #print(projectsData[name])
@@ -55,22 +55,47 @@ def kmeans(dataSet, name, col1, col2, saveName):
             count[5] = count[5] + 1
     print(count)
     #print(kmeans.labels_[0])
-    '''
     jdata = {}
     nodes = []
+    links = []
     index = 0
     for i in projectsData[name]:
         if len(kmeans.labels_) > index:
             x = {}
             x["id"] = str(i)
-            x["group"] = int(kmeans.labels_[index])
+            x["group"] = int(kmeans.labels_[index]) + 1
             nodes.append(x)
+            y = {}
+            y["source"] = str(i)
+            y["target"] = str(int(kmeans.labels_[index]) + 1)
+            y["value"] = 1
+            links.append(y)
+
         else:
             pass
         index = index + 1  
+    count = 0
+    for i in kmeans.cluster_centers_:
+        count = count + 1
+        x["id"] = str(count)
+        x["group"] = count
+        nodes.append(x)
+        count2 = count
+        for j in kmeans.cluster_centers_[count:]:
+            if count2 < 6:
+                count2 = count2 + 1
+                y = {}
+                y["source"] = str(count)
+                y["target"] = str(count2)
+                y["value"] = 4
+                links.append(y)
+            else:
+                pass
     jdata["nodes"] = nodes
-    print(json.dumps(jdata))
-    '''
+    jdata["links"] = links
+    #print(json.dumps(jdata))
+    with open(saveName, 'w') as outfile:
+        json.dump(jdata, outfile)
     print(kmeans.cluster_centers_)
     #plt.scatter(kDataX, kDataY)
     #plt.show()
@@ -83,7 +108,8 @@ def main():
         count = count + 1
         for j in klusters[count:]:
             print("Clustering on " + i + " and " + j + ":")
-            kmeans("./small_data/repositories-1.2.0-2018-03-12.csv", "Name with Owner", i , j, "Test")
+            save = "./json/" + i.replace(" ","_") + "vs" + j.replace(" ","_") + ".json"
+            kmeans("./small_data/repositories-1.2.0-2018-03-12.csv", "Name with Owner", i , j, save )
     '''
     print("Starting KMeans Clustering ON Projects")
     klusters = ['Stars Count','Forks Count','Open Issues Count','Watchers Count','Contributors Count','SourceRank']
