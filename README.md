@@ -17,7 +17,7 @@ Our primary goal of this project is to gain insights about open source software.
 
 ## Questions and Answers
 
-#### The primary questions we will consider during the duration of this project will focus on analyzing trends in open source projects.
+#### The primary *questions* we will consider during the duration of this project will focus on analyzing trends in open source projects.
 
 1. **What insights can we gain to improve the open source community further?**
    - As we use various techniques to mine the data throughout the project, we hope to gain more information about the various languages used, the contributions to popular repositories, and the trends in dependencies which rely on those open source projects.
@@ -26,9 +26,9 @@ Our primary goal of this project is to gain insights about open source software.
 3. **Can we predict upcoming popular repositories?**
    - We hope to answer this question using all the information from the mined data. We would like to predict upcoming popular repositories based on all the insights we gain from the data analysis we will perform. Answering this question will be beneficial to understand the open source community.
 
-#### Through various data mining tools and techniques, we were able to gain answers to those questions defined above. 
+#### Through various data mining tools and techniques we used, we were able to gain *answers* to those questions defined above. 
 
-**(insert words)**
+**(insert words, analysis, diagrams)**
 
 ## Application
 
