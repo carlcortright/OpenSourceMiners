@@ -34,17 +34,17 @@
 }
 
 .keen-dataviz .keen-spinner-indicator {
-  border-top-color: rgba(0, 187, 222, .4);
+  border-top-color: #C55C7D;
 }
 
 .keen-dashboard .chart-wrapper {
   background: #fff;
-  border: 1px solid #e2e2e2;
+  border: 2px solid #F8B185;
   border-radius: 3px;
   margin-bottom: 10px;
 }
 .keen-dashboard .chart-wrapper .chart-title {
-  border-bottom: 1px solid #d7d7d7;
+  border-bottom: 2px solid #F8B185;
   color: #666;
   font-size: 14px;
   font-weight: 200;
@@ -59,7 +59,7 @@
 
 .keen-dashboard .chart-wrapper .chart-notes {
   background: #fbfbfb;
-  border-top: 1px solid #e2e2e2;
+  border-top: 2px solid #F8B185;
   color: #808080;
   font-size: 12px;
   padding: 8px 10px 5px;
@@ -79,4 +79,19 @@
 .nodes circle {
 stroke: #fff;
 stroke-width: 1.5px;
+}
+
+.force-container {
+  height: 80vh;
+}
+
+.navbar {
+  background: #355C7D;
+  border-color: #355C7D;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+.navbar-inverse .navbar-brand{
+  color: white;
 }
