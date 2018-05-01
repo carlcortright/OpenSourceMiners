@@ -14,7 +14,7 @@ function makeGraph() {
         .force("charge", d3.forceManyBody())
         .force("center", d3.forceCenter(container.width()/2, container.height()/2));
 
-    d3.json("assets/data/force-graph-data.json", function(error, graph) {
+    d3.json("assets/data/Stars_CountvsWatchers_Count.json", function(error, graph) {
     if (error) throw error;
 
     var link = svg.append("g")
