@@ -26,15 +26,21 @@ Our primary goal of this project is to gain insights about open source software.
 
 #### Through various data mining tools and techniques we used, we were able to gain *answers* to the questions defined above. 
 
-- The use of clustering was essential to answering our core question: identifying areas in the open source community that need improvement.To try to find deficiencies in the open source community we clustered repositories, and from there we could identify cluster that are “lacking” and can benefit from extra community involvement. We implemented a K-Means clustering algorithm on the dataset. The below diagram is an example of using the center of each K-Means cluster to determine the average number of Open Issues/ Contributors. Through this process we were able to identify 17 different repositories in need of the most community assistance. 
+- The use of clustering was essential to answering our core question: identifying areas in the open source community that need improvement.To try to find deficiencies in the open source community we clustered repositories, and from there we could identify cluster that are “lacking” and can benefit from extra community involvement. We implemented a K-Means clustering algorithm on the dataset. The below diagram is an example of using the center of each K-Means cluster to determine the average number of Open Issues/ Contributors. Through an extensive process similar to this, we were able to identify 17 different repositories in need of the most community assistance. 
 
   <img src="https://i.imgur.com/QfEkdyL.png" width="400">
 
-- We also used similar techniques as described above in order to predict upcoming popular repositories. 
+- We also used similar techniques as described above in order to predict upcoming popular repositories. We found that 348 repositories have the potential to be very large and heavily contributed to repositories in the future. We understand that this may not be the best way to predict trends and future growth, but limited to the scope of this course, we are proud of the “predictions” we made. The below graph is an example of how contributions through JavaScript have been changing over time. 
+
+<img src="https://i.imgur.com/qKgMXOZ.png" width="400">
+
+- Through all our data mining process, we were able to gain valuable insight about the open source community. With the use of techniques and tools that faciliatated the data mining process, we were able to understand trends and patterns in open source development. In addition to the conclusions and predictions described above, we were further able to understand the open source community in various aspects. The below graph is an example of one of the behaviors we observed in open source repositories. As shown below, the stars count on a repository and the forks count on a repository are highly correlated. 
+
+<img src="https://i.imgur.com/kXIpkuf.png" width="400">
 
 
 
-More detail about the process we used to gain our conclusions is described in our [final paper](https://docs.google.com/document/d/1baDelFUFpcC7ZS77eT9sbUd8dSdNb1dGOf8VF_E_uRA/edit?usp=sharing).
+More detail about the process we used to reach our conclusions is described in our [final paper](https://docs.google.com/document/d/1baDelFUFpcC7ZS77eT9sbUd8dSdNb1dGOf8VF_E_uRA/edit?usp=sharing).
 
 ## Application
 
@@ -44,7 +50,7 @@ Through our cluster analysis, we were able to identify that “Stars/Contributor
 
 ## Video Demonstration
 
-In our final report, we discuss the technical aspects of data mining and what our team accomplished through the extraction and analysis of our dataset. In addition, we have also created a short video demoing   our results. The video can be found [here](https://www.youtube.com/).
+In our final report, we discuss the technical aspects of data mining and what our team accomplished through the extraction and analysis of our dataset. In addition, we have also created a short video demoing   our results and conclusions. The video can be found [here](https://www.youtube.com/).
 
 ## Final Paper
 
