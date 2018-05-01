@@ -66,29 +66,18 @@
             Controls
           </div>
           <div class="chart-stage">
-              <form>
-                  <div class="form-group">
-                    <label for="exampleFormControlSelect2">Axis Attributes for Projects</label>
-                    <select multiple class="form-control" id="projects">
-                      <option>Source Rank</option>
-                      <option>Licences</option>
-                      <option>Language</option>
-                      <option>Status</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlSelect2">Axis Attributes for Repositories</label>
-                    <select multiple class="form-control" id="repositories">
-                      <option>Stars Count</option>
-                      <option>Fork Count</option>
-                      <option>Open Issues Count</option>
-                      <option>Watchers Count</option>
-                      <option>Contributers Count</option>
-                      <option>Source Rank</option>
-                    </select>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+              <div class="form-group">
+                <label for="exampleFormControlSelect2">Axis Attributes for Projects</label>
+                <select multiple class="form-control" id="projects">
+                  <option>Stars Count</option>
+                  <option>Fork Count</option>
+                  <option>Open Issues Count</option>
+                  <option>Watchers Count</option>
+                  <option>Contributers Count</option>
+                  <option>Source Rank</option>
+                </select>
+              </div>
+              <button onclick="selectData()" class="btn btn-primary">Submit</button>
           </div>
         </div>
       </div>
@@ -103,6 +92,6 @@
   crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script type="text/javascript" src="assets/js/force-graph.js"></script>
-  <script src="assets/js/resize-charts.js"></script>
+  <script src="assets/js/custom.js"></script>
 </body>
 </html>
