@@ -24,7 +24,7 @@ Our primary goal of this project is to gain insights about open source software.
 3. **Can we predict upcoming popular repositories?**
    - We hope to answer this question using all the information from the mined data. We would like to predict upcoming popular repositories based on all the insights we gain from the data analysis we will perform. Answering this question will be beneficial to understand the open source community.
 
-#### Through various data mining tools and techniques we used, we were able to gain *answers* to those questions defined above. 
+#### Through various data mining tools and techniques we used, we were able to gain *answers* to the questions defined above. 
 
 **(insert words, analysis, diagrams)**
 
@@ -36,7 +36,7 @@ Through our cluster analysis, we were able to identify that “Stars/Contributor
 
 ## Video Demonstration
 
-**(insert link)**
+Through our report, we walk through and discuss a lot about the technical aspects of data mining and what our team accomplished regarding our extraction and analysis of our dataset. Therefore, we created a short video walking through some of our results as well taking a quick tour of the website we developed. The video can be found [here](https://www.youtube.com/).
 
 ## Final Paper
 
