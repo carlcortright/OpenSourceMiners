@@ -74,20 +74,42 @@ def kmeans(dataSet, name, col1, col2, saveName):
         else:
             pass
         index = index + 1  
-    count = 0
+
+    a = {}
+    b = {}
+    c = {}
+    d = {}
+    e = {}
+    f = {}
+    a["id"] = "1"
+    a["group"] = 1
+    b["id"] = "2"
+    b["group"] = 2
+    c["id"] = "3"
+    c["group"] = 3
+    d["id"] = "4"
+    d["group"] = 4
+    e["id"] = "5"
+    e["group"] = 5
+    f["id"] = "6"
+    f["group"] = 6
+    nodes.append(a)
+    nodes.append(b)
+    nodes.append(c)
+    nodes.append(d)
+    nodes.append(e)
+    nodes.append(f)
+    count1 = 0
     for i in kmeans.cluster_centers_:
-        count = count + 1
-        x["id"] = str(count)
-        x["group"] = count
-        nodes.append(x)
-        count2 = count
-        for j in kmeans.cluster_centers_[count:]:
+        count1 = count1 + 1
+        count2 = count1
+        for j in kmeans.cluster_centers_[count1:]:
             if count2 < 6:
                 count2 = count2 + 1
                 y = {}
-                y["source"] = str(count)
+                y["source"] = str(count1)
                 y["target"] = str(count2)
-                y["value"] = 4
+                y["value"] = 3
                 links.append(y)
             else:
                 pass
@@ -108,7 +130,7 @@ def main():
         count = count + 1
         for j in klusters[count:]:
             print("Clustering on " + i + " and " + j + ":")
-            save = "./json/" + i.replace(" ","_") + "vs" + j.replace(" ","_") + ".json"
+            save = "./../website/assets/data/" + i.replace(" ","_") + "vs" + j.replace(" ","_") + ".json"
             kmeans("./small_data/repositories-1.2.0-2018-03-12.csv", "Name with Owner", i , j, save )
     '''
     print("Starting KMeans Clustering ON Projects")
