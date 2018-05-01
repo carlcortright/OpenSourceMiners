@@ -1,6 +1,6 @@
 # Open Source Analysis
 
-## Project Members
+## Team Members
 
 - Andrew Casner - *B.S. Computer Science*
 - Oliver Collins - *B.A. Computer Science*
@@ -26,7 +26,7 @@ Our primary goal of this project is to gain insights about open source software.
 
 #### Through various data mining tools and techniques we used, we were able to gain *answers* to the questions defined above. 
 
-**(insert words, analysis, diagrams)**
+
 
 ## Application
 
@@ -36,8 +36,14 @@ Through our cluster analysis, we were able to identify that “Stars/Contributor
 
 ## Video Demonstration
 
-Through our report, we walk through and discuss a lot about the technical aspects of data mining and what our team accomplished regarding our extraction and analysis of our dataset. Therefore, we created a short video walking through some of our results as well taking a quick tour of the website we developed. The video can be found [here](https://www.youtube.com/).
+In our final report, we discuss the technical aspects of data mining and what our team accomplished through the extraction and analysis of our dataset. In addition, we have also created a short video demoing   our results. The video can be found [here](https://www.youtube.com/).
 
 ## Final Paper
 
 The final paper can be found [here](https://docs.google.com/document/d/1baDelFUFpcC7ZS77eT9sbUd8dSdNb1dGOf8VF_E_uRA/edit?usp=sharing).
+
+## Website
+
+We have created a website which allows others to learn more about our project and interact with a force graph to better understand relationships about the conclusion we've made [here](https://carlcortright.github.io/OpenSourceMiners/website/index.html). 
+
+![Alt Text](http://g.recordit.co/dkmiLcpaGK.gif)
