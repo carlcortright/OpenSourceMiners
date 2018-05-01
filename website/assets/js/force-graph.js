@@ -1,5 +1,6 @@
 
 function makeGraph(data_path) {
+    d3.selectAll("svg > *").remove();
     let container = $(".force-container");
     var svg = d3.select("svg"),
     width = +svg.attr("width"),
