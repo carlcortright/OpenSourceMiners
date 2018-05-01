@@ -1,5 +1,6 @@
 
-function makeGraph() {
+function makeGraph(data_path) {
+    d3.selectAll("svg > *").remove();
     let container = $(".force-container");
     var svg = d3.select("svg"),
     width = +svg.attr("width"),
@@ -14,7 +15,7 @@ function makeGraph() {
         .force("charge", d3.forceManyBody())
         .force("center", d3.forceCenter(container.width()/2, container.height()/2));
 
-    d3.json("assets/data/force-graph-data.json", function(error, graph) {
+    d3.json(data_path, function(error, graph) {
     if (error) throw error;
 
     var link = svg.append("g")
