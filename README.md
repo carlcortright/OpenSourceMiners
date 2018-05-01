@@ -50,7 +50,7 @@ Through our cluster analysis, we were able to identify that “Stars/Contributor
 
 ## Video Demonstration
 
-In our final report, we discuss the technical aspects of data mining and what our team accomplished through the extraction and analysis of our dataset. In addition, we have also created a short video demoing   our results and conclusions. The video can be found [here](https://www.youtube.com/).
+In our final report, we discuss the technical aspects of data mining and what our team accomplished through the extraction and analysis of our dataset. In addition, we have also created a short video demoing   our results and conclusions. The video can be found [here](https://drive.google.com/file/d/1JZgXRdf5vyjWdnJCadi2Z2EjVeyCvX5j/view?usp=sharing).
 
 ## Final Paper
 
