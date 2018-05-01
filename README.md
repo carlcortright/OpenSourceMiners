@@ -54,7 +54,7 @@ In our final report, we discuss the technical aspects of data mining and what ou
 
 ## Final Paper
 
-The final paper can be found [here](https://docs.google.com/document/d/1baDelFUFpcC7ZS77eT9sbUd8dSdNb1dGOf8VF_E_uRA/edit?usp=sharing).
+The final paper can be found [here](https://github.com/carlcortright/OpenSourceMiners/blob/master/Group14_OpenSourceAnalysis_Part4.pdf).
 
 ## Website
 
