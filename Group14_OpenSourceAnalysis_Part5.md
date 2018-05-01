@@ -1,3 +1,3 @@
-### Link to Video Discussing Results  
+### Link to Video Discussing Results:   
 
-https://bit.ly/2jj5VjN
+https://youtu.be/WWND0ApVp94
